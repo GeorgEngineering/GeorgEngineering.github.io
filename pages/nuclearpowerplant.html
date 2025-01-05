@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George's Portfolio - Nuclear Power Plant</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        body {
+            font-family: "Roboto", serif;
+            background-color: beige;
+        }  
+        main {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .description-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .description {
+            width: 50rem; 
+            margin: 1em;
+            text-align: center; 
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 1em;
+        }
+        text {
+            margin-left: 1em;
+        }
+        img {
+            margin-top: 2em;
+            margin-bottom: 2em;
+            width: 100%;
+            height: auto; 
+            object-fit: contain;
+        }
+        p {
+            text-align: justify;
+        }
+        #graph {
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Nuclear Power Plant Design & Simulation</h1>
+        <a href="../index.html">Home</a>
+        <div class="description-container">
+            <div class="description">
+                <p>This Nuclear Power Plant design that we have created takes into account three different design iterations, that are included below:</p>
+
+                <h3>Design 1: Standard No Reheat Stages Rankine Cycle</h3>
+                <iframe src="../code/design1noreheat.txt" width="600" height="400"></iframe>
+
+                <h3>Design 2: Rankine Cycle With One Reheat Stage</h3>
+                <iframe src="../code/design2onereheat.txt" width="600" height="400"></iframe>
+
+                <h3>Design 3: Rankine Cycle With Three Reheat Stages</h3>
+                <iframe src="../code/design3threereheat.txt" width="600" height="400"></iframe>
+                <img src="../images/design3.png" alt="">
+
+                <p>The final design was selected as it was returned the highest efficiency and least amount of emissions. The analytical data can be visualized in the graph below:</p>
+
+                <img id="graph" src="../images/graph.png" alt="">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

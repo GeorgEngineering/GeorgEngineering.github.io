@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>George's Portfolio</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        body {
+            font-family: "Roboto", serif;
+            background-color: beige;
+        }  
+        main {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .project {
+            border: 1px solid black;
+            border-radius: 15px;
+            width: 50rem; 
+            margin: 1em;
+            text-align: center; 
+
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+
+            padding: 1em;
+        }
+        text {
+            margin-left: 1em;
+        }
+        img {
+            width: 50%;
+            height: auto; 
+            object-fit: contain;
+        }
+        p {
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
-    <p>this is a basic website </p>
+    <main>
+        <h1>George's Projects</h1>
+        <p>Here are a few projects that I'm working on.</p>
+        
+        <div class="projects">
+            <div class="project">
+                <img src="images/thumbnail.png" alt="">
+                <div class="text">
+                    <h3>Nuclear Power Plant Design & Simulation</h3>
+                    <p>This project focuses on designing an efficient Rankine Cycle powered by nuclear microreactors to supply electricity and 
+                        heating to remote, off-grid communities. By optimizing the cycle and evaluating environmental impacts, the goal is to 
+                        reduce energy costs and emissions compared to traditional power sources.
+                    </p>
+                    <a href="pages/nuclearpowerplant.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>
